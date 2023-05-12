@@ -1,0 +1,183 @@
+/*--Global--*/
+html {
+    background-image: url(imgs/bkg_nfs-001.jpg);
+    background-size: cover;
+    color: rgb(202, 202, 202);
+    background-color: black;
+}
+
+
+#parentDiv {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.headers {
+    margin:0px 0px 7px 0px;
+    text-align: center;
+    color: rgb(239, 0, 0);
+    font-family: 'NFS font', sans-serif;
+}
+
+select, input {
+    background-color: black;
+    color:white;
+}
+/*--Header Area--*/
+#innerDiv {
+    display: inline-block;
+    margin: 0px 0px 5px 0px;
+    padding: 10px;
+    border: 3px solid rgb(202, 202, 202);
+    width: 1100px;
+    height: 94vh;
+    opacity: 0.8;
+    background-color: black;
+}
+
+#title {
+    font-family: 'NFS font', sans-serif;
+    color: rgb(239, 0, 0);
+                                                
+}
+
+.subHeader {
+    text-align: center; 
+    margin: 0px 10px 20px 0px;
+}
+
+#buttonDiv {
+    text-align: right;
+    position: relative;
+    width: 100%;
+}
+
+#openInsButton {
+    display: inline-block; 
+    position: absolute; 
+    top: -30px; 
+    left: 964px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+}
+
+#openInsButton:hover, #closeInsButton:hover {
+    background-color: rgb(202, 202, 202);
+}
+
+#closeInsButton {
+    display: none; 
+    position: absolute; 
+    top: -30px; 
+    left: 978px;
+    height: 30px;
+}
+
+
+/*--Instructions Area--*/
+.instructionsArea {
+    display: none;
+    margin: 5px 0px 5px 0px;
+    padding: 10px;
+    border: 2px solid rgb(202, 202, 202);
+    width: 1078px;
+    background-color: black;
+}
+
+
+/*--Inital Options Area--*/
+.initalOptionsArea {
+    display:inline-block;
+    margin: 5px 0px 5px 0px;
+    padding:10px;
+    border: 2px solid rgb(202, 202, 202);
+    width: 1078px;
+    text-align:center;
+}
+
+/*--Filter Options Area--*/
+.optionsArea {
+    display: inline-block;
+    margin: 5px 0px 5px 0px;
+    padding: 10px;
+    border: 2px solid rgb(202, 202, 202);
+    width: 1078px;
+    text-align: center;
+}
+
+.rightLabelSpacing {
+    padding-right: 5px;
+}
+
+.rightMarginSpacing {
+    margin-right: 10px
+}
+
+/*--PresetLists Area--*/
+.presetListsDiv {
+    display: none;
+    margin: 5px 0px 5px 0px;
+    padding: 10px;
+    padding-bottom: 12px; /*weird*/
+    border: 2px solid rgb(202, 202, 202);
+    width: 1078px;
+    text-align: center;
+}
+
+
+/*--Output Area--*/
+.parentOutputArea {
+    display: inline-block;
+    margin: 5px 0px 0px 0px;
+    padding:10px;
+    border: 2px solid rgb(202, 202, 202);
+    height:402px;
+    width: 1078px;
+    text-align: center
+}
+
+.outputSubParent {
+    display: flex;
+    text-align: center; 
+    height: 355px;
+}
+
+.sideOutputBoxDiv1 {
+    text-align: center; 
+    flex: 1;
+    margin-top: 10px;
+    margin-right: 5px;
+    border: 2px solid rgb(202, 202, 202);
+}
+
+.sideOutputBoxDiv2 {
+    display: flex;
+    text-align: center; 
+    flex: 2; 
+    margin-top: 10px;
+    margin-left: 5px;                                  
+    border: 2px solid rgb(202, 202, 202);
+}
+
+.sideOutputDivs {
+    flex: 1;
+}
+
+.outputTitles {
+   color: rgb(239, 0, 0);
+   font-weight: bold;
+   font-size: 16px;
+   font-family: 'NFS font', sans-serif;
+}
+
+
+.sideOutputParas {
+    font-size: 14px; 
+    text-align: center; 
+    padding: 10px;
+}
+
+#output1 {
+    font-size: 24px
+}
