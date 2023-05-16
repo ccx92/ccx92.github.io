@@ -14,7 +14,7 @@
         <!--Header-->
         <div id="innerDiv">
             <h1 id="title" style="text-align:center;margin: 0px;">NFSHPR Track Randomiser</h1>
-            <h5 class="subHeader">by MasterNoobCCX V1.5.2</h5>
+            <h5 class="subHeader">by MasterNoobCCX V1.5.2.1</h5>
             <div id="buttonDiv">
                 <button id="openInsButton" onClick="openInstructions()">Click for Instructions</button>
                 <button id="closeInsButton" onClick="closeInstructions()">Close Instructions</button>
@@ -26,7 +26,7 @@
                 <ul style="padding-left: 15px;margin: 0px;text-align:left;">
                     <li>Pick between 5 or 10 tracks to randomise then choose your track selection method. Filters lets you customise and Preset List uses popular lists of tracks.</li>
                     <ul>
-                        <li><b>Filters</b>: Ensure track lengths are above 6.3 miles / 10.3 kilometres. Ghost tracks equalling "Partial" will pool non issue tracks and tracks with minor problems.</li>
+                        <li><b>Filters</b>: Ensure track lengths are 6.4 miles / 10.4 kilometres or above. Ghost tracks with "Partial" will pool non issue tracks and tracks with minor problems.</li>
                     <li><b>Preset Lists</b>: Ensure you have a list selected from the dropdown. Filters from the other selection method are <b>ignored here.</b></li>
                     </ul>
                     <li>When done, use the "Randomise Tracks" button below to have the tool print out a randomised selection of tracks.</li>
@@ -67,9 +67,9 @@
     
                 <!--Track Length-->
                 <label for="trackMinLength" class="rightLabelSpacing">Track Minumum Length:</label>
-                <input type="number" id="trackMinLength" class="rightMarginSpacing" min="6.4" max="26.7" onchange="trackLengthUpdater()" value="0">
+                <input type="number" id="trackMinLength" class="rightMarginSpacing" min="6.4" max="26.7" onchange="trackLengthUpdater()" value="6.4">
                 <label for="trackMaxLength" class="rightLabelSpacing">Track Maximum Length:</label>
-                <input type="number" id="trackMaxLength" class="rightMarginSpacing" min="6.4" max="26.7" onchange="trackLengthUpdater()" value="0">
+                <input type="number" id="trackMaxLength" class="rightMarginSpacing" min="6.4" max="26.7" onchange="trackLengthUpdater()" value="6.4">
     
                 <!--Crossplay Issue Tracks-->
                 <label for="cpiTracks" class="rightLabelSpacing">Allow Ghost Tracks?:</label>

@@ -105,6 +105,10 @@ trackCountHolder = document.getElementById("trackCount").value;
 trackSelectTypeHolder = document.getElementById("filterOrList").value;
 speedoTypeHolder = document.getElementById("speedoType").value;
 
+minLengthBase = 6.4;
+arrPosValue = 0;
+simpleSpeedoName = "";
+
 trackMinLengthHolder = document.getElementById("trackMinLength").value;
 trackMaxLengthHolder = document.getElementById("trackMaxLength").value;                       
 cpiTracksHolder = document.getElementById("cpiTracks").value;
@@ -171,6 +175,9 @@ function mainFunction(){
     console.log("Highway Track Preference: " + highwayTracksHolder);
     console.log("Preset List: " + trackListHolder);
 
+
+    trackCountUpdater();
+    speedoTypeUpdater();
     if(trackSelectTypeHolder == "Filter"){
         //Ensures trackListHolder is set to None to avoid running any preset lists.
         trackListHolder = "None";
@@ -202,11 +209,7 @@ function populatateArr(){
     customisedTrackArr = [];
     ignoredTrackArr = [];
 
-    //2. Prepare some variable holders to handle speedometer preference.
-    minLengthBase = 0;
-    arrPosValue = 0;
-    simpleSpeedoName = "";
-
+    //2. Prepare some speedometer preferences.
     if(speedoTypeHolder == "Imperial"){
         minLengthBase = 6.4;
         arrPosValue = 1;
@@ -215,6 +218,7 @@ function populatateArr(){
         minLengthBase = 10.4;
         arrPosValue = 2;
         simpleSpeedoName = "Kilometres";
+        console.log("minLengthBase: " + minLengthBase - 1);
     }
 
 
@@ -276,7 +280,7 @@ function populatateArr(){
             populateIgnoredArr();
         }
     } else if(trackMinLengthHolder <= minLengthBase || trackMaxLengthHolder <= minLengthBase){
-        alert("Seems a clown failed to read. Please enter a minimum track length of " + minLengthBase-1 + " " + simpleSpeedoName + " or higher.");
+        alert("Seems a clown failed to read. Please enter a minimum track length of " + minLengthBase + " " + simpleSpeedoName + " or higher.");
     }
     
 }
